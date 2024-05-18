@@ -3,9 +3,9 @@
 <div>&nbsp;</div>
 </div>
 
-# Finetuning of Quantized LLMs
+# Finetuning of LLMs
 
-This is the repo for the `Efficient Finetuning of Quantized LLMs` project, which aims to build and share instruction-following Chinese `baichuan-7b/LLaMA/Pythia/GLM` model tuning methods which can be trained on **a single Nvidia RTX-2080TI**, multi-round chatbot which can be trained on **a single Nvidia RTX-3090** with the context len 2048.
+This is the repo for the `Finetuning of LLMs` project, which aims to build and share instruction-following Chinese `baichuan-7b/LLaMA/Pythia/GLM` model tuning methods which can be trained on **a single Nvidia RTX-2080TI**, multi-round chatbot which can be trained on **a single Nvidia RTX-3090** with the context len 2048.
 
 We uses [bitsandbytes](https://github.com/TimDettmers/bitsandbytes) for quantization and is integrated with Huggingface's [PEFT](https://github.com/huggingface/peft) and [transformers](https://github.com/huggingface/transformers/) libraries.
 
@@ -337,12 +337,12 @@ We appreciate the work by many open-source contributors, especially:
 Please cite the repo if you use the data or code in this repo.
 
 ```bibtex
-@misc{Chinese-Guanaco,
+@misc{Green,
   author = {jianzhnie},
-  title = {Chinese-Guanaco: Efficient Finetuning of Quantized LLMs for Chinese},
+  title = {Green - LLMs},
   year = {2023},
   publisher = {GitHub},
   journal = {GitHub repository},
-  howpublished = {\url{https://github.com/jianzhnie/Efficient-Tuning-LLMs}},
+  howpublished = {\url(https://github.com/greendreamer/tunning_llms_python)}},
 }
 ```
