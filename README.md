@@ -143,7 +143,7 @@ cd tunning_llms_python
 | -------------------------------- | ------------------------------------------------------------------------------------ | ------------------------------------------ |
 | [train.py](./train.py)           | Full finetune LLMs on  SFT datasets                                                  | [full_finetune](./scripts/full_finetune)   |
 | [train_lora.py](./train_lora.py) | Finetune LLMs by using Lora  (Low-Rank Adaptation of Large Language Models finetune) | [lora_finetune](./scripts/lora_finetune)   |
-| [train_qlora.py](train_qlora.py) | Finetune LLMs by using QLora (QLoRA: Efficient Finetuning of Quantized LLMs)         | [qlora_finetune](./scripts/qlora_finetune) |
+| [train_qlora.py](train_qlora.py) | Finetune LLMs by using QLora (QLoRA: Tunning LLMs)         | [qlora_finetune](./scripts/qlora_finetune) |
 
 ### QLora int4 Finetune
 
@@ -316,7 +316,7 @@ Here a list of known issues and bugs. If your issue is not reported here, please
 
 ## License
 
-`Efficient Finetuning of Quantized LLMs` is released under the Apache 2.0 license.
+`Tunning LLMs` is released under the Apache 2.0 license.
 
 ## Acknowledgements
 
