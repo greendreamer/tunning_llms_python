@@ -10,19 +10,8 @@
 [![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
 
-<div align="center">
 
-👋🤗🤗👋 Join our [WeChat](assets/wechat.jpg).
-
-</div>
-
-# Efficient Finetuning of Quantized LLMs  --- 低资源的大语言模型量化训练/部署方案
-
-<div align="center">
-
-[中文](README_zh.md) | English
-
-</div>
+# Finetuning of Quantized LLMs
 
 This is the repo for the `Efficient Finetuning of Quantized LLMs` project, which aims to build and share instruction-following Chinese `baichuan-7b/LLaMA/Pythia/GLM` model tuning methods which can be trained on **a single Nvidia RTX-2080TI**, multi-round chatbot which can be trained on **a single Nvidia RTX-3090** with the context len 2048.
 
@@ -290,14 +279,14 @@ max_memory = {i: '46000MB' for i in range(torch.cuda.device_count())}
 
 ## Inference
 
-### 终端交互式对话
+### Terminal interactive dialogue
 
-运行下面的脚本，程序会在命令行中和你的ChatBot进行交互式的对话，在命令行中输入指示并回车即可生成回复，输入 `clear` 可以清空对话历史，输入 `stop` 终止程序。
+Run the following script. The program will have an interactive conversation with your ChatBot on the command line. Enter instructions on the command line and press Enter to generate a reply. Enter `clear` to clear the conversation history. Enter `stop` to terminate the program. .
 
 ```bash
 python cli_demo.py \
     --model_name_or_path ~/checkpoints/baichuan7b \ # base model
-    --checkpoint_dir ./work_dir/checkpoint-700  \ # 训练的模型权重
+    --checkpoint_dir ./work_dir/checkpoint-700  \ #Trained model weights
     --trust_remote_code  \
     --double_quant \
     --quant_type nf4 \
@@ -305,7 +294,7 @@ python cli_demo.py \
     --bits 4
 ```
 
-### 使用 Gradio 进行网页端交互
+### Use Gradio for web-side interaction
 
 This file reads the foundation model from the Hugging Face model hub and the LoRA weights from `path/to/your/model_dir`, and runs a Gradio interface for inference on a specified input. Users should treat this as example code for the use of the model, and modify it as needed.
 
