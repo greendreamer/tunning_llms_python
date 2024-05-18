@@ -133,8 +133,8 @@ pip install -q -U git+https://github.com/huggingface/accelerate.git
 Clone this repository and navigate to the Efficient-Tuning-LLMs folder
 
 ```bash
-git clone https://github.com/jianzhnie/Efficient-Tuning-LLMs.git
-cd Efficient-Tuning-LLMs
+git clone https://github.com/greendreamer/tunning_llms_python.git
+cd tunning_llms_python
 ```
 
 ## Getting Started
