@@ -3,14 +3,6 @@
 <div>&nbsp;</div>
 </div>
 
-![GitHub Repo stars](https://img.shields.io/github/stars/jianzhnie/Chinese-Guanaco?style=social)
-![GitHub Code License](https://img.shields.io/github/license/jianzhnie/Chinese-Guanaco)
-![GitHub last commit](https://img.shields.io/github/last-commit/jianzhnie/Chinese-Guanaco)
-![GitHub pull request](https://img.shields.io/badge/PRs-welcome-blue)
-[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/release/python-390/)
-[![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://github.com/psf/black)
-
-
 # Finetuning of Quantized LLMs
 
 This is the repo for the `Efficient Finetuning of Quantized LLMs` project, which aims to build and share instruction-following Chinese `baichuan-7b/LLaMA/Pythia/GLM` model tuning methods which can be trained on **a single Nvidia RTX-2080TI**, multi-round chatbot which can be trained on **a single Nvidia RTX-3090** with the context len 2048.
